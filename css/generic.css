@@ -1,0 +1,12 @@
+.banner {
+  height: 20vh !important; }
+.banner .content {
+  color: #ffffff !important; }
+
+.card {
+  padding: 10px;
+  line-height: 1.5; }
+.card h3 {
+  font-weight: 300; }
+
+/*# sourceMappingURL=generic.css.map */

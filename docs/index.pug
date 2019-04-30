@@ -1,0 +1,57 @@
+include ../incudes/header.pug
+// banner
+.banner
+    .content
+        h2.red-text INDUSTRIOUS
+        p  A responsive business oriented template with a video background <br> designed by TEMPLATED and released under the Creative Commons License.
+// features
+.header.center
+    h4 SEM TURPIS AMET SEMPER
+    p In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet.<br> Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.
+
+//Start features 
+.row
+    .container
+        - var list = [ [ 'fa-id-card' , 'I am a very simple card1' ],[ 'fa-file' , 'I am a very simple card2' ],[ 'fa-envelope-open' , 'I am a very simple card3' ],[ 'fa-asterisk' , 'I am a very simple card4' ],[ 'fa-paper-plane' , 'I am a very simple card5' ],[ 'fa-qrcode' , 'I am a very simple card6' ]] ; 
+        each val in list
+            .col.m6.l4.s12
+                div.card.center
+                    .card-image
+                        i.red-text.fa-5x.fas(class=val[0])
+                        p FEUGIAT CONSEQUAT
+                
+                    .card-content
+                        p= val[1]
+.header.center.with-bgc
+    h4 CURABITUR ULLAMCORPER ULTRICIES
+    p Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet <br>placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum<br>ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus.<br>Integer ac sed ametpraesent. Nunc lacinia ante nunc ac gravida.
+// Start testemonial
+.header.center
+    h4 FAUCIBUS CONSEQUAT LOREM
+    p In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet.<br> Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.
+
+
+    - var n = 1;
+    .container
+        .row
+            - for(n ; n < 4; n++)
+                .col.m6.l4.s12
+                    if n == 3
+                        .card.hide-on-med-only        
+                            .card-content
+                                p(style="padding-left: 30px;text-align: left;border-left: 5px solid #ddd") Nunc lacinia ante nunc ac <br>lobortis ipsum. Interdum <br>adipiscing gravida odio <br>porttitor sem non mi <br>integer non faucibus.  
+                            .card-action.left-align
+                                img.circle.responsive-img.hide-on-small-only(src="./images/pic0"+n+".jpg")
+                                p.inline
+                                    span.red-text  - John Deo
+                                    span CEO -ABC inc.
+                    else
+                        .card               
+                            .card-content
+                                p(style="padding-left: 30px;text-align: left;border-left: 5px solid #ddd") Nunc lacinia ante nunc ac <br>lobortis ipsum. Interdum <br>adipiscing gravida odio <br>porttitor sem non mi <br>integer non faucibus.  
+                            .card-action.left-align
+                                img.circle.responsive-img.hide-on-small-only(src="./images/pic0"+n+".jpg")
+                                p.inline
+                                    span.red-text  - John Deo
+                                    span CEO -ABC inc.
+include ../incudes/footer.pug

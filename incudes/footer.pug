@@ -1,0 +1,28 @@
+footer.page-footer
+    .container
+        .row
+            .col.l5.m5.s12
+                h5.white-text ACCUMSAN MONTES VIVERRA
+                p.grey-text Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing.
+            
+            .col.offset-l1.l3.m4.s12
+                h5.white-text SEM TURPIS AMET
+                ul
+                    - var links = [ "Dolor pulvinar sed etiam."  ,"Dolor pulvinar sed etiam.","Dolor pulvinar sed etiam.","Dolor pulvinar sed etiam."]
+                    each link in links
+                        li.grey-text= link
+            .col.l2.offset-l1.m3.s12
+                h5.white-text Social
+                ul
+                    - var social = [ ["facebook", "fab fa-facebook-f"]  , ["Twitter", "fab fa-twitter"] , ["Instagram", "fab fa-instagram"] , ["Github", "fab fa-github"]]
+                    each li in social
+                        li
+                            a.grey-text(href="#!")
+                                i(class=li[1])
+                                span= li[0]
+
+
+script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+script.
+    M.AutoInit()
+html
